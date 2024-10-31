@@ -1,8 +1,8 @@
 import uuid
 from django.db import models
 
-from MUFC.models.friend import Friend
-from MUFC.models.user import User
+from model.friend import Friend
+from model.user import User
 
 
 class Event(models.Model):

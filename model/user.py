@@ -1,7 +1,7 @@
 import uuid
 from django.db import models
 
-from MUFC.models.person import Person
+from model.person import Person
 
 
 class User (Person):

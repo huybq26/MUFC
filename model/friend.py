@@ -1,8 +1,8 @@
 import uuid
 from django.db import models
 
-from MUFC.models.person import Person
-from MUFC.models.user import User
+from model.person import Person
+from model.user import User
 
 
 class Friend(Person):

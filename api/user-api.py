@@ -3,8 +3,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
-from MUFC.models.user import User
-from MUFC.services.user_service import get_user_from_id, create_user, update_user, delete_user
+from model.user import User
+from services.user_service import get_user_from_id, create_user, update_user, delete_user
 
 
 @api_view(['POST'])

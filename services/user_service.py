@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import make_password
 from django.core.exceptions import ValidationError
 
-from MUFC.models.user import User
+from model.user import User
 
 ## Methods to get a user from attribute
 def get_user_by_attribute(attribute, value):
@@ -59,6 +59,23 @@ def update_user(user_id, attribute, value):
         print(f"An exception occurred: {e}")
         return False
 
+## Methods to update all attributes at once:
+def update_all_user_fields(user_id, field_values):
+    """
+    Parameters:
+    - user_id: UUID of the user to update
+    - field_values: Dictionary where keys are field names and values are the new values to set
+    """
+    try:
+        user = User.objects.get(id=user_id)
+        for field, value in field_values.items():
+            if hasattr(user, field):  # Ensure the user has the attribute before setting it
+                setattr(user, field, value)
+        user.full_clean()
+        user.save()
+        return True
+    except User.DoesNotExist:
+        return False
 
 ## Methods to delete a user
 def delete_user(user_id):
