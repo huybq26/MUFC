@@ -1,6 +1,7 @@
 import uuid
 from django.db import models
 
+from model.hobby import Hobby
 from model.person import Person
 from model.user import User
 
@@ -15,6 +16,7 @@ class Friend(Person):
     facebook = models.CharField(max_length=50)
     whatsapp = models.CharField(max_length=50)
     insta = models.CharField(max_length=50)
+    hobbies = models.ManyToManyField(Hobby, related_name="friends")
 
     def __str__(self):
         return self.name
