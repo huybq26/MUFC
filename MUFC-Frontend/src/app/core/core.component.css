@@ -1,0 +1,53 @@
+/* Ensure core-container takes full viewport */
+.core-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Horizontal Bar */
+.horizontal-bar {
+  position: fixed; /* Fixes the bar to the top */
+  top: 0; /* Aligns to the top */
+  left: 50%; /* Centers horizontally */
+  transform: translateX(-50%); /* Centers element */
+  width: 100%; /* Stretches the full width */
+  height: 60px; /* Adjust height as needed */
+
+
+  display: flex; /* Flex for aligning inner elements */
+  align-items: center; /* Center vertically */
+  justify-content: space-evenly; /* Center content horizontally */
+  z-index: 1000; /* Ensure it stays on top */
+  border-radius: 50%;
+}
+
+/* Vertical Bar */
+.vertical-bar {
+  position: fixed; /* Fixes the bar to the left */
+  top: 0px; /* Aligns to the top */
+  left: 0; /* Aligns to the left */
+  width: 30vh; /* Adjust width as needed */
+  height: 100vh; /* Spans the full height */
+  /*background-color: #333; !* Set background color *!*/
+  /*color: white; !* Optional text color *!*/
+  display: flex; /* Flex for aligning inner elements */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: stretch;
+  z-index: 10000; /* Ensure it stays on top */
+}
+
+/* Page Content */
+.content-container {
+  margin-top: 60px; /* Pushes content below horizontal bar */
+  margin-left: 80px; /* Pushes content to the right of vertical bar */
+  padding: 20px; /* Add padding for spacing */
+  position: relative;
+  z-index: 1; /* Ensure content does not overlap nav bars */
+  height: calc(100vh - 60px); /* Adjust height to fit within viewport */
+  overflow-y: auto; /* Enable scrolling for content */
+}

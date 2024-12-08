@@ -1,0 +1,20 @@
+mat-sidenav-container {
+  height: 100vh; /* Full height of the viewport */
+}
+
+mat-sidenav {
+  width: 250px; /* Adjust as needed */
+  background-color: #f4f4f4; /* Light background for sidenav */
+}
+
+mat-list-item {
+  cursor: pointer;
+}
+
+mat-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Highlight effect */
+}
+
+mat-icon {
+  margin-right: 16px; /* Space between the icon and text */
+}
