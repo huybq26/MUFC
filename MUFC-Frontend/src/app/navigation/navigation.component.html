@@ -1,7 +1,27 @@
-<mat-toolbar color="primary">
-  <a mat-button routerLink="/overview">Overview</a>
-  <a mat-button routerLink="/inner">Inner</a>
-  <a mat-button routerLink="/middle">Middle</a>
-  <a mat-button routerLink="/outer">Outer</a>
-  <a mat-button routerLink="/extended">Extended</a>
+<mat-toolbar>
+  <a
+    mat-button
+    routerLink="/overview"
+    [class.highlighted]="activeLink === '/overview'"
+    (click)="setActive('/overview')">Overview</a>
+  <a
+    mat-button
+    routerLink="/inner"
+    [class.highlighted]="activeLink === '/inner'"
+    (click)="setActive('/inner')">Inner</a>
+  <a
+    mat-button
+    routerLink="/middle"
+    [class.highlighted]="activeLink === '/middle'"
+    (click)="setActive('/middle')">Middle</a>
+  <a
+    mat-button
+    routerLink="/outer"
+    [class.highlighted]="activeLink === '/outer'"
+    (click)="setActive('/outer')">Outer</a>
+  <a
+    mat-button
+    routerLink="/extended"
+    [class.highlighted]="activeLink === '/extended'"
+    (click)="setActive('/extended')">Extended</a>
 </mat-toolbar>

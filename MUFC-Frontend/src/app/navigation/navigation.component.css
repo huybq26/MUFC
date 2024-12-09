@@ -1,13 +1,15 @@
-/*mat-toolbar {*/
-/*  position: sticky;*/
-/*  top: 0;*/
-/*  z-index: 1000;*/
-/*}*/
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
 
 mat-tab-group {
   flex-grow: 1;
 }
 
-mat-tab-group .mat-tab-label {
-  text-transform: capitalize;
+a {
+  font-size: 1.3rem;
+  margin-left: 2rem;
 }

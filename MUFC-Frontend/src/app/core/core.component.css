@@ -6,6 +6,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: white;
 }
 
 /* Horizontal Bar */
@@ -15,31 +16,30 @@
   left: 50%; /* Centers horizontally */
   transform: translateX(-50%); /* Centers element */
   width: 100%; /* Stretches the full width */
-  height: 60px; /* Adjust height as needed */
-
-
+  height: 65px; /* Adjust height as needed */
+  /*background: #000;*/
   display: flex; /* Flex for aligning inner elements */
   align-items: center; /* Center vertically */
-  justify-content: space-evenly; /* Center content horizontally */
-  z-index: 1000; /* Ensure it stays on top */
-  border-radius: 50%;
+  justify-content: space-around; /* Center content horizontally */
+  z-index: 1000;
+  background: white;
 }
 
 /* Vertical Bar */
-.vertical-bar {
-  position: fixed; /* Fixes the bar to the left */
-  top: 0px; /* Aligns to the top */
-  left: 0; /* Aligns to the left */
-  width: 30vh; /* Adjust width as needed */
-  height: 100vh; /* Spans the full height */
-  /*background-color: #333; !* Set background color *!*/
-  /*color: white; !* Optional text color *!*/
-  display: flex; /* Flex for aligning inner elements */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: stretch;
-  z-index: 10000; /* Ensure it stays on top */
-}
+/*.vertical-bar {*/
+/*  position: fixed; !* Fixes the bar to the left *!*/
+/*  top: 0px; !* Aligns to the top *!*/
+/*  left: 0; !* Aligns to the left *!*/
+/*  width: 30vh; !* Adjust width as needed *!*/
+/*  height: 100vh; !* Spans the full height *!*/
+/*  !*background-color: #333; !* Set background color *!*!*/
+/*  !*color: white; !* Optional text color *!*!*/
+/*  display: flex; !* Flex for aligning inner elements *!*/
+/*  flex-direction: column; !* Stack items vertically *!*/
+/*  justify-content: center; !* Center items vertically *!*/
+/*  align-items: stretch;*/
+/*  z-index: 10000; !* Ensure it stays on top *!*/
+/*}*/
 
 /* Page Content */
 .content-container {
@@ -50,4 +50,11 @@
   z-index: 1; /* Ensure content does not overlap nav bars */
   height: calc(100vh - 60px); /* Adjust height to fit within viewport */
   overflow-y: auto; /* Enable scrolling for content */
+}
+
+#menu-button{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
 }

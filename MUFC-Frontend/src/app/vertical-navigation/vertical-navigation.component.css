@@ -1,10 +1,12 @@
 mat-sidenav-container {
   height: 100vh; /* Full height of the viewport */
+
 }
 
 mat-sidenav {
   width: 250px; /* Adjust as needed */
-  background-color: #f4f4f4; /* Light background for sidenav */
+  background-color: white; /* Light background for sidenav */
+  top: 60px;
 }
 
 mat-list-item {
@@ -17,4 +19,16 @@ mat-list-item:hover {
 
 mat-icon {
   margin-right: 16px; /* Space between the icon and text */
+}
+a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+mat-nav-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
