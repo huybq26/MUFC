@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {VerticalNavigationComponent} from '../vertical-navigation/vertical-navigation.component';
-import {NavigationComponent} from '../navigation/navigation.component';
+import {VerticalNavigationComponent} from './components/vertical-navigation/vertical-navigation.component';
+import {NavigationComponent} from './components/navigation/navigation.component';
 import {MatIcon} from '@angular/material/icon';
 import {MatIconButton} from '@angular/material/button';
 

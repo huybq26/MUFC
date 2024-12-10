@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {NavigationComponent} from './navigation/navigation.component';
-import {VerticalNavigationComponent} from './vertical-navigation/vertical-navigation.component';
+import {NavigationComponent} from './core/components/navigation/navigation.component';
+import {VerticalNavigationComponent} from './core/components/vertical-navigation/vertical-navigation.component';
 import {CoreComponent} from './core/core.component';
 
 @Component({
@@ -13,3 +13,5 @@ import {CoreComponent} from './core/core.component';
 export class AppComponent {
   title = 'MUFC-Frontend';
 }
+
+

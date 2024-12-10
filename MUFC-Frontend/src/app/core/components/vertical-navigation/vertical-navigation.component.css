@@ -1,0 +1,45 @@
+mat-sidenav-container {
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Ensure proper layout */
+  width: 30vh;
+}
+
+mat-sidenav {
+  width: 30vh; /* Adjust as needed */
+  background-color: white; /* Light background for sidenav */
+  position: fixed; /* Make it fixed to avoid scrolling with the page */
+  top: 60px; /* Adjust top offset if needed */
+  bottom: 0;
+  z-index: 2; /* Ensure it is above the main content */
+}
+
+mat-sidenav-container .mat-sidenav-content {
+  margin-left: 250px; /* Match the sidenav width */
+  flex: 1; /* Ensure content takes the remaining space */
+  overflow: auto; /* Handle scrolling for the main content */
+}
+
+mat-list-item {
+  cursor: pointer;
+}
+
+mat-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Highlight effect */
+}
+
+mat-icon {
+  margin-right: 16px; /* Space between the icon and text */
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+mat-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
