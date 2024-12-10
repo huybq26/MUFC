@@ -11,22 +11,13 @@ mat-card{
   margin: auto;
   padding: 15px;
 }
-/*mat-card-header{*/
-/*  text-align: center;*/
-/*  text-transform: capitalize;*/
-/*  font-weight: bold;*/
-/*  font-size: large;*/
-/*  margin-bottom: 20px;*/
-/*}*/
-/*mat-card-content{*/
-/*  width: 80%;*/
-/*  margin: auto;*/
-/*}*/
+
 mat-card-footer{
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+

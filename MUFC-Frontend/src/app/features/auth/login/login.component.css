@@ -1,0 +1,27 @@
+/*mat-form-field{*/
+/*  flex-direction: column;*/
+/*  */
+/*}*/
+.card-container{
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+mat-card{
+  width: 35vw;
+  margin: auto;
+  padding: 15px;
+}
+mat-card-footer{
+  margin-bottom: 20px;
+}
+
+#sign-up-invite{
+  margin: 15px auto 0;
+}
+
+
