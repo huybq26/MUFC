@@ -43,7 +43,7 @@
 
 /* Page Content */
 .content-container {
-  margin-top: 60px; /* Pushes content below horizontal bar */
+  margin-top: 20px; /* Pushes content below horizontal bar */
   margin-left: 80px; /* Pushes content to the right of vertical bar */
   padding: 20px; /* Add padding for spacing */
   position: relative;
