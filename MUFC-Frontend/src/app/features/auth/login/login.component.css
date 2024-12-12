@@ -4,7 +4,9 @@
 /*}*/
 .card-container{
   width: 100%;
+  margin-top: 65px;
 }
+
 form {
   display: flex;
   flex-direction: column;

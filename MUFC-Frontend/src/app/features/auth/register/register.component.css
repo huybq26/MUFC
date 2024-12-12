@@ -1,23 +1,21 @@
-/*mat-form-field{*/
-/*  flex-direction: column;*/
-/*  */
-/*}*/
-.card-container{
-  width: 100%;
+.card-container {
+    width: 100%;
+    margin-top: 65px;
 }
 
-mat-card{
-  width: 35vw;
-  margin: auto;
-  padding: 15px;
+mat-card {
+    width: 35vw;
+    margin: auto;
+    padding: 15px;
 }
 
-mat-card-footer{
-  margin-bottom: 20px;
+mat-card-footer {
+    margin-bottom: 20px;
 }
+
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 

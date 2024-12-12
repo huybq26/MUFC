@@ -1,4 +1,4 @@
-<div class="card-container">
+<section class="card-container">
   <mat-card>
     <mat-card-header>
       <mat-card-title><b>Register</b></mat-card-title>
@@ -16,7 +16,7 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Email</mat-label>
-          <input type = "email" matInput formControlName="email">
+          <input type="email" matInput formControlName="email">
         </mat-form-field>
         <mat-form-field>
           <mat-label>Date of Birth</mat-label>
@@ -25,7 +25,7 @@
 
         <mat-form-field>
           <mat-label>Password</mat-label>
-          <input matInput [type]="hide() ? 'password' : 'text'" formControlName="password" />
+          <input matInput [type]="hide() ? 'password' : 'text'" formControlName="password"/>
           <button
             mat-icon-button
             matSuffix
@@ -33,16 +33,15 @@
             [attr.aria-label]="'Hide password'"
             [attr.aria-pressed]="hide()"
           >
-            <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+            <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
           </button>
         </mat-form-field>
         <mat-card-footer>
-          <a href="/login">Returning User?</a>
+          <a href="/login">Returning User? Click here!</a>
         </mat-card-footer>
         <button mat-flat-button>Register</button>
 
       </form>
     </mat-card-content>
-
   </mat-card>
-</div>
+</section>

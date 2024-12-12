@@ -1,20 +1,22 @@
-<div class="core-container">
-  <!-- Horizontal Bar -->
-  <div class="horizontal-bar">
+<main>
+  <header>
+    <nav class="horizontal-bar" aria-label="Main navigation">
       <button mat-icon-button id="menu-button" (click)="toggleOpenSignalInput()">
         <mat-icon>menu</mat-icon>
       </button>
-    <app-navigation>
-    </app-navigation>
-  </div>
-  <!-- Vertical Bar -->
-<!--  <div class="vertical-bar">-->
-<!--    <app-vertical-navigation [openSignal] = "openSignalInput">-->
-<!--    </app-vertical-navigation>-->
-<!--  </div>-->
+      <app-navigation>
+      </app-navigation>
+    </nav>
 
-  <!-- Page Content -->
-  <div class="content-container">
-  <router-outlet></router-outlet>
+    <!--  <nav class="vertical-bar" aria-label="Sub navigation">-->
+    <!--    <app-vertical-navigation [openSignal] = "openSignalInput">-->
+    <!--    </app-vertical-navigation>-->
+    <!--  </nav>-->
+  </header>
+  <div class="main-container">
+    <router-outlet></router-outlet>
   </div>
-</div>
+  <footer>
+
+  </footer>
+</main>
