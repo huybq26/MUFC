@@ -1,0 +1,36 @@
+<section class="content-container">
+<!--  <h1 class="text-title">Messaging & Catching Up!</h1>-->
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><b>Messaging & Catching Up!</b></mat-card-title>
+
+      <br/><p>
+        Send messages to your friends and catch up on your conversations, with the help of AI.
+      </p>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="messagingForm" class="message-form">
+        <mat-form-field>
+          <mat-label>Recipient</mat-label>
+          <input matInput formControlName="recipient">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Subject</mat-label>
+          <input matInput formControlName="subject">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>AI suggestion keywords</mat-label>
+          <input matInput formControlName="keywords">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message"></textarea>
+        </mat-form-field>
+        <button mat-flat-button color="primary" (click)="onSend()">Send</button>
+      </form>
+    </mat-card-content>
+
+
+  </mat-card>
+
+</section>

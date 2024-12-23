@@ -1,27 +1,27 @@
 <mat-toolbar>
   <a
     mat-button
-    routerLink="/overview"
-    [class.highlighted]="activeLink === '/overview'"
+    routerLink="/home"
+    [class.highlighted]="activeLink === '/home'"
     (click)="setActive('/overview')">Overview</a>
   <a
     mat-button
-    routerLink="/inner"
-    [class.highlighted]="activeLink === '/inner'"
-    (click)="setActive('/inner')">Inner</a>
+    routerLink="/friends"
+    [class.highlighted]="activeLink === '/friends'"
+    (click)="setActive('/inner')">Friends</a>
   <a
     mat-button
-    routerLink="/middle"
-    [class.highlighted]="activeLink === '/middle'"
-    (click)="setActive('/middle')">Middle</a>
+    routerLink="/messaging"
+    [class.highlighted]="activeLink === '/friends'"
+    (click)="setActive('/inner')">Messaging</a>
   <a
     mat-button
-    routerLink="/outer"
-    [class.highlighted]="activeLink === '/outer'"
-    (click)="setActive('/outer')">Outer</a>
+    routerLink="/login"
+    [class.highlighted]="activeLink === '/login'"
+    (click)="setActive('/extended')">Login</a>
   <a
     mat-button
-    routerLink="/extended"
-    [class.highlighted]="activeLink === '/extended'"
-    (click)="setActive('/extended')">Extended</a>
+    routerLink="/register"
+    [class.highlighted]="activeLink === '/register'"
+    (click)="setActive('/extended')">Register</a>
 </mat-toolbar>

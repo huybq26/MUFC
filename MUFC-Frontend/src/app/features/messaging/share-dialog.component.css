@@ -1,0 +1,17 @@
+.dialog-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.icon-container a {
+  text-decoration: none;
+}
+
+.icon-container button {
+  margin: 5px;
+}
+
+.icon-container .disabled {
+  color: gray;
+}
