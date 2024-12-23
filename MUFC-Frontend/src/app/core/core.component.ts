@@ -10,7 +10,7 @@ import {MatIconButton} from '@angular/material/button';
   templateUrl: './core.component.html',
   imports: [
     RouterOutlet,
-    VerticalNavigationComponent,
+    // VerticalNavigationComponent,
     NavigationComponent,
     MatIcon,
     MatIconButton

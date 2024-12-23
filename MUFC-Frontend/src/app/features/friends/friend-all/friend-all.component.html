@@ -1,1 +1,36 @@
+<section class="main-container">
+  <h1 class="text-title">Your Friend List</h1>
+  <div class="card-container">
+    @for (friend of friend_data; track friend.friend_id) {
+      <mat-card class="friend-card">
+        <div class="card-content">
+          <div class="friend-details">
+            <h2>{{ friend.name }}</h2>
+            <p>
+              Last contacted: {{ parseDate(friend.last_contacted) | date:'dd-MM-YYYY' }}
+              <br/>
+              Catching up:
+              <span *ngIf="isOverdue(friend.last_contacted); else nextContact" class="overdue">
+                Overdue {{ getOverdueDays(friend.last_contacted) }} days ago
+              </span>
+              <ng-template #nextContact>
+                <span
+                  class="next-contact">Next contact date: {{ getNextContactDate(friend.last_contacted) | date:'dd-MM-YYYY' }}
+                </span>
+              </ng-template>
+            </p>
+          </div>
 
+          <div class="friend-actions">
+            <button mat-icon-button color="primary">
+              <mat-icon>send</mat-icon>
+            </button>
+            <button mat-icon-button color="accent">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-card>
+    }
+  </div>
+</section>

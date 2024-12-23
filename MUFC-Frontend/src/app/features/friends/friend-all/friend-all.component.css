@@ -1,0 +1,53 @@
+.main-container{
+  width: 100%;
+  height: 100%;
+  margin-top: 65px;
+}
+
+.text-title {
+  margin: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: darksalmon;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 90%;
+  margin: auto;
+}
+
+.friend-card {
+  display: flex;
+  padding: 16px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.friend-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.next-contact {
+  color: green;
+  font-weight: bold;
+}
